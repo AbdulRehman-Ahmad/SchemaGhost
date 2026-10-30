@@ -6,13 +6,7 @@ tags: devchallenge, hf26challenge
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-week4-2026-10-26)*
 
-<!--
-Before publishing:
-1. Replace [VIDEO_URL_TO_BE_ADDED] below with your video link.
-2. Change `published: false` to `published: true`.
-3. Add a live demo link in the Demo section if you have one.
-Delete this comment block when you are done.
--->
+
 
 ## What I Built
 
@@ -44,9 +38,9 @@ You give SchemaGhost the JSON the old app expects and the JSON the API returns n
 
 ## Demo
 
-🎥 **Video demo:** [VIDEO_URL_TO_BE_ADDED]
+🎥 **Video demo:** https://drive.google.com/file/d/1ohn94Jw1MrYHC5EHTDIBhmKY-8M-sZbo/view?usp=sharing
 
-{% embed [VIDEO_URL_TO_BE_ADDED] %}
+
 
 <!-- Optional: add a live demo link here if you have one. -->
 

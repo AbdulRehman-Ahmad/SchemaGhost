@@ -10,7 +10,7 @@ SchemaGhost helps you migrate a legacy application to a changed API. You give it
 SchemaGhost compares them, suggests which new field replaces each old field, checks every suggestion with plain C# code, and (only after you approve) produces a reviewable `mapping.json` and a `CompatibilityAdapter.cs` file.
 
 > Built for the **Hacktoberfest Open-Source AI Challenge, Week 4: Ghost in the Machine**.
-> Demo video: [VIDEO_URL_TO_BE_ADDED]
+> Demo video: https://drive.google.com/file/d/1ohn94Jw1MrYHC5EHTDIBhmKY-8M-sZbo/view?usp=sharing
 
 ---
 
