@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://schemaghost-api.somee.com/api/:path*"
+    }
+  ]
+}
