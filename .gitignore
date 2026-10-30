@@ -9,3 +9,5 @@ dist/
 appsettings.Local.json
 appsettings.Production.json
 *.user
+
+publish/
