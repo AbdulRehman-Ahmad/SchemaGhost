@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "1 Demo - offline heuristic (interactive)": {
+      "commandName": "Project",
+      "commandLineArgs": "map --legacy ..\\..\\samples\\old.json --modern ..\\..\\samples\\new.json --engine heuristic --out ..\\..\\ghost-out --pause"
+    },
+    "2 Demo - offline heuristic (auto-approve)": {
+      "commandName": "Project",
+      "commandLineArgs": "map --legacy ..\\..\\samples\\old.json --modern ..\\..\\samples\\new.json --engine heuristic --yes --out ..\\..\\ghost-out --pause"
+    },
+    "3 Demo - local model via Ollama": {
+      "commandName": "Project",
+      "commandLineArgs": "map --legacy ..\\..\\samples\\old.json --modern ..\\..\\samples\\new.json --model qwen3:0.6b --yes --out ..\\..\\ghost-out --pause"
+    },
+    "4 Benchmark - heuristic": {
+      "commandName": "Project",
+      "commandLineArgs": "bench --cases ..\\..\\benchmark\\cases.json --pause"
+    },
+    "5 Benchmark - heuristic + Ollama": {
+      "commandName": "Project",
+      "commandLineArgs": "bench --cases ..\\..\\benchmark\\cases.json --with-ollama --model qwen3:0.6b --pause"
+    }
+  }
+}

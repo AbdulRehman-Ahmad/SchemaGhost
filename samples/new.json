@@ -1,0 +1,1 @@
+{ "account": { "id": 1024, "status": "active" }, "full_name": "Ali", "contact": { "email_address": "ali@example.com" }, "isActive": "true", "wallet": { "balance": 250.75 } }

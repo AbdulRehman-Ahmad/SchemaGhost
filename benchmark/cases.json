@@ -1,0 +1,44 @@
+[
+  {
+    "name": "flat rename",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "product_name": "Laptop", "price": 999.5 },
+    "modern": { "name": "Laptop", "price": 999.5 },
+    "expected": { "product_name": "name", "price": "price" }
+  },
+  {
+    "name": "nesting change",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "user_id": 1024, "name": "Ali" },
+    "modern": { "account": { "id": 1024 }, "full_name": "Ali" },
+    "expected": { "user_id": "account.id", "name": "full_name" }
+  },
+  {
+    "name": "type change",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "id": 1024, "count": 7 },
+    "modern": { "id": "1024", "count": "7" },
+    "expected": { "id": "id", "count": "count" }
+  },
+  {
+    "name": "field removed upstream",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "email": "a@x.com", "phone": "555-0100" },
+    "modern": { "contact": { "email": "a@x.com" } },
+    "expected": { "email": "contact.email", "phone": null }
+  },
+  {
+    "name": "abbreviations to full names",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "temp_c": 21.5, "hum": 40, "ts": "2026-01-05T10:00:00Z" },
+    "modern": { "readings": { "temperature": 21.5, "humidity": 40 }, "timestamp": "2026-01-05T10:00:00Z" },
+    "expected": { "temp_c": "readings.temperature", "hum": "readings.humidity", "ts": "timestamp" }
+  },
+  {
+    "name": "same-value ambiguity",
+    "source": "SEED (synthetic pattern) - replace with a real changelog case",
+    "legacy": { "low": 10, "high": 10 },
+    "modern": { "min": 10, "max": 10 },
+    "expected": { "low": "min", "high": "max" }
+  }
+]

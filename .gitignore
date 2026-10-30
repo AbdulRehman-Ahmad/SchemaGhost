@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+ghost-out/
+node_modules/
+dist/
+.angular/
+.env
+appsettings.Local.json
+appsettings.Production.json
+*.user
